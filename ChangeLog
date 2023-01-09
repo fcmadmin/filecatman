@@ -1,0 +1,32 @@
+=== Filecatman 0.2.3 (9th of January 2023) ===
+	* PySide6 support
+	* Windows compatibility
+	* Mac compatibility
+
+=== Filecatman 0.2.2.2 (6th of April 2019) ===
+	* Bug fixes.
+
+=== Filecatman 0.2.2.1 (6th of April 2019) ===
+	* Bug fixes.
+
+=== Filecatman 0.2.2 (4th of April 2019) ===
+	* Bug fixes.
+
+=== Filecatman 0.2.1 (2nd of April 2019) ===
+	* Bug fixes.
+
+=== Filecatman 0.2 (28th of February 2016) ===
+	* Database changes.
+	* Bug fixes.
+	* New features.
+
+=== Filecatman 0.1.2 (6th of October 2014) ===
+	* Bug fixes.
+
+=== Filecatman 0.1.1 (7th of June 2014) ===
+	* Bug fixes.
+	* Upgraded category selection models to be hierarchical.
+	* Added link checking feature.
+	
+=== Filecatman 0.1 (27th of March 2014) ===
+	* The first release of Filecatman.

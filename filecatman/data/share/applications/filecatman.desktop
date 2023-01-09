@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Filecatman
+Type=Application
+Comment=Categorize files and data
+GenericName=File Categorizer
+Exec=filecatman
+Icon=filecatman
+Terminal=false
+Categories=Utility;X-KDE-Utilities-Desktop;

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: filecatman
+Version: 0.2.3
+Summary: A file categorization management program.
+Home-page: https://github.com/fcmadmin/filecatman
+Download-URL: https://github.com/fcmadmin/filecatman
+Author: Rich T
+Author-email: - NA -
+License: GPLv3
+Platform: Linux
+Platform: Windows
+Platform: Mac
+
+A file categorization management program, designed to make sorting, categorizing and accessing data simple and easy.

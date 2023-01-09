@@ -1,0 +1,1971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>622</width>
+    <height>536</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">outline: none;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="childrenCollapsible">
+       <bool>false</bool>
+      </property>
+      <widget class="QSplitter" name="splitter">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QScrollArea {
+	background: transparent;
+	border: transparent;
+}
+QScrollArea &gt; QWidget &gt; QWidget {
+	background: transparent;
+	border: transparent;
+}
+QScrollArea &gt; QWidget {
+	background: transparent;
+	border: transparent;
+}</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="opaqueResize">
+        <bool>true</bool>
+       </property>
+       <property name="childrenCollapsible">
+        <bool>false</bool>
+       </property>
+       <widget class="QScrollArea" name="scrollAreaMenu">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>200</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>200</width>
+           <height>196</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTreeView" name="treeMenu">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::CustomContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="lineWidth">
+             <number>0</number>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>false</bool>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="uniformRowHeights">
+             <bool>false</bool>
+            </property>
+            <property name="animated">
+             <bool>false</bool>
+            </property>
+            <property name="allColumnsShowFocus">
+             <bool>true</bool>
+            </property>
+            <property name="headerHidden">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QScrollArea" name="scrollAreaDisplay">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaDisplayContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>416</width>
+           <height>196</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="tableTitleWidget" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <layout class="QHBoxLayout" name="tableTitleLayout">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="tableTitle">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="margin">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="tableStatus">
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+               <property name="margin">
+                <number>5</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QStackedWidget" name="tableViewWidget">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="treeViewPage"/>
+            <widget class="QWidget" name="listViewPage"/>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="tableSearchWidget" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <layout class="QHBoxLayout" name="tableSearchLayout">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="leftMargin">
+              <number>1</number>
+             </property>
+             <property name="topMargin">
+              <number>1</number>
+             </property>
+             <property name="rightMargin">
+              <number>1</number>
+             </property>
+             <property name="bottomMargin">
+              <number>1</number>
+             </property>
+             <item>
+              <widget class="QLineEdit" name="lineFind">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>300</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Search For Phrase</string>
+               </property>
+               <property name="statusTip">
+                <string>Search for phrase in table</string>
+               </property>
+               <property name="placeholderText">
+                <string>Find in table</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolPreviousResult">
+               <property name="toolTip">
+                <string>Go To Previous Result</string>
+               </property>
+               <property name="statusTip">
+                <string>Go to the previous search result</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>18</width>
+                 <height>18</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolNextResult">
+               <property name="toolTip">
+                <string>Go To Next Result</string>
+               </property>
+               <property name="statusTip">
+                <string>Go to the next search result</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>18</width>
+                 <height>18</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolSelectAll">
+               <property name="toolTip">
+                <string>Select All Search Results</string>
+               </property>
+               <property name="statusTip">
+                <string>Select all search results</string>
+               </property>
+               <property name="text">
+                <string>Select All</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>18</width>
+                 <height>18</height>
+                </size>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextBesideIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolHideSearch">
+               <property name="toolTip">
+                <string>Close Find Bar</string>
+               </property>
+               <property name="statusTip">
+                <string>Close the find bar</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>18</width>
+                 <height>18</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="detailsTab">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QScrollArea {
+	background: transparent;
+	border: 0;
+}
+QScrollArea &gt; QWidget &gt; QWidget {
+	background: transparent;
+	border: 0;
+}
+QScrollArea &gt; QWidget {
+	background: transparent;
+	border: 0;
+}</string>
+        </property>
+        <attribute name="icon">
+         <iconset>
+          <normaloff>:/æicons/prettyOffice/Order-history32.png</normaloff>:/æicons/prettyOffice/Order-history32.png</iconset>
+        </attribute>
+        <attribute name="title">
+         <string>Details</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QScrollArea" name="scrollArea_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents_3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>618</width>
+              <height>224</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <property name="leftMargin">
+              <number>15</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="rightMargin">
+              <number>15</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <layout class="QGridLayout" name="detailsGrid" columnstretch="0,0">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="1">
+                <widget class="QLabel" name="label1Value">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                 <property name="openExternalLinks">
+                  <bool>true</bool>
+                 </property>
+                 <property name="textInteractionFlags">
+                  <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="label5Name">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="1">
+                <widget class="QLabel" name="label7Value">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                 <property name="openExternalLinks">
+                  <bool>true</bool>
+                 </property>
+                 <property name="textInteractionFlags">
+                  <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLabel" name="label2Value">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                 <property name="openExternalLinks">
+                  <bool>true</bool>
+                 </property>
+                 <property name="textInteractionFlags">
+                  <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLabel" name="label6Name">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label2Name">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="0">
+                <widget class="QLabel" name="label7Name">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLabel" name="label4Value">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                 <property name="openExternalLinks">
+                  <bool>true</bool>
+                 </property>
+                 <property name="textInteractionFlags">
+                  <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="label4Name">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label1Name">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLabel" name="label3Value">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                 <property name="openExternalLinks">
+                  <bool>true</bool>
+                 </property>
+                 <property name="textInteractionFlags">
+                  <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QLabel" name="label6Value">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                 <property name="openExternalLinks">
+                  <bool>true</bool>
+                 </property>
+                 <property name="textInteractionFlags">
+                  <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label3Name">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLabel" name="label5Value">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                 <property name="openExternalLinks">
+                  <bool>true</bool>
+                 </property>
+                 <property name="textInteractionFlags">
+                  <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="0">
+                <widget class="QLabel" name="label8Name">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="1">
+                <widget class="QLabel" name="label8Value">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                 <property name="openExternalLinks">
+                  <bool>true</bool>
+                 </property>
+                 <property name="textInteractionFlags">
+                  <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="relationsTab">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QScrollArea {
+	background: transparent;
+	border: 0;
+}
+QScrollArea &gt; QWidget &gt; QWidget {
+	background: transparent;
+	border: 0;
+}
+QScrollArea &gt; QWidget {
+	background: transparent;
+	border: 0;
+}</string>
+        </property>
+        <attribute name="icon">
+         <iconset>
+          <normaloff>:/æicons/prettyOffice/addressbook32.png</normaloff>:/æicons/prettyOffice/addressbook32.png</iconset>
+        </attribute>
+        <attribute name="title">
+         <string>Relations</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QScrollArea" name="scrollArea_5">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents_5">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>618</width>
+              <height>224</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QHBoxLayout" name="relationsActionsLayout">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>2</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>2</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="labelRelationsCount">
+                 <property name="enabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="text">
+                  <string>0 Relations</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="spacerRelations">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonViewRelation">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>View Selected</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>:/æicons/prettyOffice/Start32.png</normaloff>:/æicons/prettyOffice/Start32.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>12</width>
+                   <height>12</height>
+                  </size>
+                 </property>
+                 <property name="flat">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonDeleteRelation">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>Delete Relation</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>:/æicons/prettyOffice/delete232.png</normaloff>:/æicons/prettyOffice/delete232.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>12</width>
+                   <height>12</height>
+                  </size>
+                 </property>
+                 <property name="flat">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="buttonDeleteAllRelations">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>Delete All</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>:/æicons/prettyOffice/delete232.png</normaloff>:/æicons/prettyOffice/delete232.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>12</width>
+                   <height>12</height>
+                  </size>
+                 </property>
+                 <property name="flat">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QTreeView" name="relationsTree">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>1</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="contextMenuPolicy">
+                <enum>Qt::CustomContextMenu</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QTreeView#relationsTree{
+	background: transparent; 
+	border:0;
+}
+</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Plain</enum>
+               </property>
+               <property name="lineWidth">
+                <number>0</number>
+               </property>
+               <property name="editTriggers">
+                <set>QAbstractItemView::NoEditTriggers</set>
+               </property>
+               <property name="showDropIndicator" stdset="0">
+                <bool>false</bool>
+               </property>
+               <property name="alternatingRowColors">
+                <bool>false</bool>
+               </property>
+               <property name="rootIsDecorated">
+                <bool>false</bool>
+               </property>
+               <property name="itemsExpandable">
+                <bool>false</bool>
+               </property>
+               <property name="sortingEnabled">
+                <bool>true</bool>
+               </property>
+               <property name="allColumnsShowFocus">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>622</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFIle">
+    <property name="title">
+     <string>FIle</string>
+    </property>
+    <widget class="QMenu" name="menuNew">
+     <property name="title">
+      <string>New</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/æicons/prettyOffice/add232.png</normaloff>:/æicons/prettyOffice/add232.png</iconset>
+     </property>
+     <addaction name="actionNewItem"/>
+     <addaction name="actionNewCategory"/>
+    </widget>
+    <widget class="QMenu" name="menuOpenDatabase">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="statusTip">
+      <string/>
+     </property>
+     <property name="title">
+      <string>Open Database</string>
+     </property>
+     <addaction name="actionOpenSQLiteDatabase"/>
+     <addaction name="actionOpenMySQLDatabase"/>
+    </widget>
+    <widget class="QMenu" name="menuNewDatabase">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="statusTip">
+      <string/>
+     </property>
+     <property name="title">
+      <string>New Database</string>
+     </property>
+     <addaction name="actionNewSQLiteDatabase"/>
+     <addaction name="actionNewMySQLDatabase"/>
+    </widget>
+    <widget class="QMenu" name="menuImport">
+     <property name="title">
+      <string>Import</string>
+     </property>
+     <addaction name="actionImportXML"/>
+    </widget>
+    <widget class="QMenu" name="menuExport">
+     <property name="title">
+      <string>Export</string>
+     </property>
+     <addaction name="actionExportXML"/>
+    </widget>
+    <addaction name="menuNew"/>
+    <addaction name="separator"/>
+    <addaction name="menuImport"/>
+    <addaction name="menuExport"/>
+    <addaction name="separator"/>
+    <addaction name="menuNewDatabase"/>
+    <addaction name="menuOpenDatabase"/>
+    <addaction name="actionCloseDatabase"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionEditItemTypes"/>
+    <addaction name="actionEditTaxonomies"/>
+    <addaction name="actionPreferences"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionHelpContents"/>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAboutQt"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menuToolbars">
+     <property name="title">
+      <string>Toolbars</string>
+     </property>
+     <addaction name="toggleMainToolbar"/>
+     <addaction name="toggleSearchToolbar"/>
+     <addaction name="toggleBulkActionsToolbar"/>
+    </widget>
+    <addaction name="menuToolbars"/>
+    <addaction name="toggleSelectionDetails"/>
+    <addaction name="toggleSidebar"/>
+    <addaction name="toggleStatusbar"/>
+    <addaction name="separator"/>
+    <addaction name="actionFullScreen"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionDatabaseInfo"/>
+    <addaction name="actionFileManager"/>
+    <addaction name="actionAdvancedSearch"/>
+    <addaction name="actionCreateSymbolicLinks"/>
+    <addaction name="separator"/>
+    <addaction name="actionItemChecker"/>
+    <addaction name="actionLinkChecker"/>
+    <addaction name="actionRecountRelations"/>
+    <addaction name="actionShowLogFile"/>
+    <addaction name="actionOpenConfigFolder"/>
+    <addaction name="separator"/>
+    <addaction name="actionVacuumDatabase"/>
+    <addaction name="actionDeleteAllData"/>
+    <addaction name="actionDropDatabase"/>
+   </widget>
+   <widget class="QMenu" name="menuTable">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>Table</string>
+    </property>
+    <widget class="QMenu" name="menuBulkActions">
+     <property name="title">
+      <string>Bulk Actions</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/æicons/prettyOffice/Wheel32.png</normaloff>:/æicons/prettyOffice/Wheel32.png</iconset>
+     </property>
+     <addaction name="actionBulkCopypasta"/>
+     <addaction name="actionBulkEdit"/>
+     <addaction name="actionBulkDelete"/>
+     <addaction name="actionBulkDeleteRelations"/>
+     <addaction name="actionBulkDeleteWithFiles"/>
+    </widget>
+    <widget class="QMenu" name="menuCheckActions">
+     <property name="title">
+      <string>Checkbox Actions</string>
+     </property>
+     <addaction name="actionCheckSelected"/>
+     <addaction name="actionUncheckSelected"/>
+     <addaction name="actionCheckInvertSelected"/>
+     <addaction name="separator"/>
+     <addaction name="actionCheckAll"/>
+     <addaction name="actionUncheckAll"/>
+     <addaction name="actionCheckInvertAll"/>
+    </widget>
+    <widget class="QMenu" name="menuOpenWith">
+     <property name="title">
+      <string>Open With</string>
+     </property>
+    </widget>
+    <addaction name="actionCopyFilePath"/>
+    <addaction name="actionCopypasta"/>
+    <addaction name="actionViewItem"/>
+    <addaction name="menuOpenWith"/>
+    <addaction name="actionEdit"/>
+    <addaction name="actionDelete"/>
+    <addaction name="separator"/>
+    <addaction name="actionFind"/>
+    <addaction name="actionSelectAll"/>
+    <addaction name="menuCheckActions"/>
+    <addaction name="actionOpenFolder"/>
+    <addaction name="actionRefresh"/>
+    <addaction name="menuBulkActions"/>
+    <addaction name="separator"/>
+    <addaction name="actionViewAsIcons"/>
+    <addaction name="actionViewAsList"/>
+   </widget>
+   <addaction name="menuFIle"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuTable"/>
+   <addaction name="menuView"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::CustomContextMenu</enum>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::TopToolBarArea</set>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionRefresh"/>
+   <addaction name="separator"/>
+   <addaction name="actionViewItem"/>
+   <addaction name="actionEdit"/>
+   <addaction name="actionDelete"/>
+   <addaction name="separator"/>
+   <addaction name="actionOpenFolder"/>
+  </widget>
+  <widget class="QToolBar" name="toolBarSearch">
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::CustomContextMenu</enum>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::TopToolBarArea</set>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="toolBarBulkActions">
+   <property name="contextMenuPolicy">
+    <enum>Qt::CustomContextMenu</enum>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::TopToolBarArea</set>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionApplyBulkAction"/>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit Program</string>
+   </property>
+   <property name="toolTip">
+    <string>Click here to exit</string>
+   </property>
+   <property name="statusTip">
+    <string>Exit the application</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="statusTip">
+    <string>About this software</string>
+   </property>
+  </action>
+  <action name="actionNewItem">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>New Item</string>
+   </property>
+   <property name="toolTip">
+    <string>New Item</string>
+   </property>
+   <property name="statusTip">
+    <string>Create a new item</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Delete Selected</string>
+   </property>
+   <property name="toolTip">
+    <string>Delete Selected</string>
+   </property>
+   <property name="statusTip">
+    <string>Delete the selection</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Del</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="text">
+    <string>Refresh Table</string>
+   </property>
+   <property name="iconText">
+    <string>Refresh Table</string>
+   </property>
+   <property name="toolTip">
+    <string>Refresh Table</string>
+   </property>
+   <property name="statusTip">
+    <string>Refresh the table data</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="actionViewItem">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>View Selected</string>
+   </property>
+   <property name="toolTip">
+    <string>View Selected</string>
+   </property>
+   <property name="statusTip">
+    <string>View the selected row</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Return</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Edit Selected</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit Selected</string>
+   </property>
+   <property name="statusTip">
+    <string>Edit the selection</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="actionCloseDatabase">
+   <property name="text">
+    <string>Close Database</string>
+   </property>
+   <property name="toolTip">
+    <string>Close Database</string>
+   </property>
+   <property name="statusTip">
+    <string>Close the current database</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+   <property name="statusTip">
+    <string>Open preferences dialog</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="toggleSidebar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Sidebar</string>
+   </property>
+  </action>
+  <action name="toggleStatusbar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Statusbar</string>
+   </property>
+  </action>
+  <action name="actionAboutQt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+   <property name="statusTip">
+    <string>About the Qt toolkit</string>
+   </property>
+  </action>
+  <action name="actionNewCategory">
+   <property name="text">
+    <string>New Category</string>
+   </property>
+   <property name="statusTip">
+    <string>Create a new category</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+N</string>
+   </property>
+  </action>
+  <action name="actionDeleteAllData">
+   <property name="text">
+    <string>Delete All Data</string>
+   </property>
+   <property name="statusTip">
+    <string>Delete all data from tables</string>
+   </property>
+  </action>
+  <action name="actionDatabaseInfo">
+   <property name="text">
+    <string>Database Info</string>
+   </property>
+   <property name="statusTip">
+    <string>View information about the database</string>
+   </property>
+  </action>
+  <action name="actionFullScreen">
+   <property name="text">
+    <string>Full Screen</string>
+   </property>
+   <property name="statusTip">
+    <string>Toggle fullscreen</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+  <action name="actionNewSQLiteDatabase">
+   <property name="text">
+    <string>New SQLite Database</string>
+   </property>
+   <property name="statusTip">
+    <string>Create a new SQLite database</string>
+   </property>
+  </action>
+  <action name="actionNewMySQLDatabase">
+   <property name="text">
+    <string>New MySQL Database</string>
+   </property>
+   <property name="statusTip">
+    <string>Create a new MySQL database</string>
+   </property>
+  </action>
+  <action name="actionOpenSQLiteDatabase">
+   <property name="text">
+    <string>Open SQLite Database</string>
+   </property>
+   <property name="statusTip">
+    <string>Open an existing SQLite database</string>
+   </property>
+  </action>
+  <action name="actionOpenMySQLDatabase">
+   <property name="text">
+    <string>Open MySQL Database</string>
+   </property>
+   <property name="statusTip">
+    <string>Open an existing MySQL database</string>
+   </property>
+  </action>
+  <action name="actionApplyBulkAction">
+   <property name="text">
+    <string>Apply Bulk Action</string>
+   </property>
+   <property name="toolTip">
+    <string>Apply Bulk Action</string>
+   </property>
+   <property name="statusTip">
+    <string>Apply bulk action to checked rows</string>
+   </property>
+  </action>
+  <action name="toggleMainToolbar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Main</string>
+   </property>
+  </action>
+  <action name="toggleSearchToolbar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </action>
+  <action name="toggleBulkActionsToolbar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Bulk Actions</string>
+   </property>
+  </action>
+  <action name="actionUncheckSelected">
+   <property name="text">
+    <string>Uncheck Selected</string>
+   </property>
+   <property name="statusTip">
+    <string>Uncheck the selected rows</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+A</string>
+   </property>
+  </action>
+  <action name="actionBulkDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="statusTip">
+    <string>Delete checked rows</string>
+   </property>
+  </action>
+  <action name="actionAdvancedSearch">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Advanced Search</string>
+   </property>
+   <property name="statusTip">
+    <string>Advanced search</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionImportXML">
+   <property name="text">
+    <string>Import XML</string>
+   </property>
+   <property name="statusTip">
+    <string>Import data from XML</string>
+   </property>
+  </action>
+  <action name="actionExportXML">
+   <property name="text">
+    <string>Export XML</string>
+   </property>
+   <property name="statusTip">
+    <string>Export this database to XML</string>
+   </property>
+  </action>
+  <action name="actionDropDatabase">
+   <property name="text">
+    <string>Drop Database</string>
+   </property>
+   <property name="statusTip">
+    <string>Drop the database</string>
+   </property>
+  </action>
+  <action name="toggleSelectionDetails">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Selection Details</string>
+   </property>
+  </action>
+  <action name="actionItemChecker">
+   <property name="text">
+    <string>Item Checker</string>
+   </property>
+   <property name="statusTip">
+    <string>Scan for missing files</string>
+   </property>
+  </action>
+  <action name="actionOpenFolder">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Open Folder</string>
+   </property>
+   <property name="toolTip">
+    <string>Open Data Folder</string>
+   </property>
+   <property name="statusTip">
+    <string>Open the data directory</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Home</string>
+   </property>
+  </action>
+  <action name="actionCreateSymbolicLinks">
+   <property name="text">
+    <string>Create Symbolic Links</string>
+   </property>
+   <property name="statusTip">
+    <string>Install links to files from database</string>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+  </action>
+  <action name="actionBulkDeleteRelations">
+   <property name="text">
+    <string>Delete Relations</string>
+   </property>
+   <property name="statusTip">
+    <string>Delete checked row’s relations</string>
+   </property>
+  </action>
+  <action name="actionCheckInvertSelected">
+   <property name="text">
+    <string>Check Invert Selected</string>
+   </property>
+   <property name="statusTip">
+    <string>Check invert the selected rows</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionFileManager">
+   <property name="text">
+    <string>File Manager</string>
+   </property>
+   <property name="statusTip">
+    <string>Open file manager</string>
+   </property>
+  </action>
+  <action name="actionEditItemTypes">
+   <property name="text">
+    <string>Item Types</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit Item Types</string>
+   </property>
+   <property name="statusTip">
+    <string>Edit item types of database</string>
+   </property>
+  </action>
+  <action name="actionEditTaxonomies">
+   <property name="text">
+    <string>Taxonomies</string>
+   </property>
+   <property name="toolTip">
+    <string>Edit Taxonomies</string>
+   </property>
+   <property name="statusTip">
+    <string>Edit taxonomies of database</string>
+   </property>
+  </action>
+  <action name="actionBulkDeleteWithFiles">
+   <property name="text">
+    <string>Delete with Files</string>
+   </property>
+   <property name="statusTip">
+    <string>Delete checked rows with files</string>
+   </property>
+  </action>
+  <action name="actionRefreshMenu">
+   <property name="text">
+    <string>Refresh Menu</string>
+   </property>
+   <property name="toolTip">
+    <string>Refresh Menu</string>
+   </property>
+  </action>
+  <action name="actionBulkCopypasta">
+   <property name="text">
+    <string>Copypasta</string>
+   </property>
+   <property name="statusTip">
+    <string>Copypasta checked rows</string>
+   </property>
+  </action>
+  <action name="actionCopypasta">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Copypasta Selected</string>
+   </property>
+   <property name="statusTip">
+    <string>Copypasta the selection to clipboard</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+C</string>
+   </property>
+  </action>
+  <action name="actionCopyFilePath">
+   <property name="text">
+    <string>Copy File Path</string>
+   </property>
+   <property name="statusTip">
+    <string>Copy the selection’s filepath to clipboard</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionCheckSelected">
+   <property name="text">
+    <string>Check Selected</string>
+   </property>
+   <property name="statusTip">
+    <string>Check the selected rows</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionSelectAll">
+   <property name="text">
+    <string>Select All</string>
+   </property>
+   <property name="statusTip">
+    <string>Select all rows</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Æ</string>
+   </property>
+  </action>
+  <action name="actionCheckAll">
+   <property name="text">
+    <string>Check All</string>
+   </property>
+   <property name="statusTip">
+    <string>Check all rows</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+A</string>
+   </property>
+  </action>
+  <action name="actionUncheckAll">
+   <property name="text">
+    <string>Uncheck All</string>
+   </property>
+   <property name="statusTip">
+    <string>Uncheck all rows</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+Shift+A</string>
+   </property>
+  </action>
+  <action name="actionCheckInvertAll">
+   <property name="text">
+    <string>Check Invert All</string>
+   </property>
+   <property name="statusTip">
+    <string>Check invert all rows</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+I</string>
+   </property>
+  </action>
+  <action name="actionFind">
+   <property name="text">
+    <string>Find</string>
+   </property>
+   <property name="statusTip">
+    <string>FInd in currently displayed rows</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionHelpContents">
+   <property name="text">
+    <string>Help Contents</string>
+   </property>
+   <property name="statusTip">
+    <string>View the documentation</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionDeleteRelation">
+   <property name="text">
+    <string>Delete Relation</string>
+   </property>
+   <property name="toolTip">
+    <string>Delete Selected Relation</string>
+   </property>
+  </action>
+  <action name="actionViewRelation">
+   <property name="text">
+    <string>View Relation</string>
+   </property>
+   <property name="toolTip">
+    <string>View Selected Relation</string>
+   </property>
+  </action>
+  <action name="actionVacuumDatabase">
+   <property name="text">
+    <string>Vacuum Database</string>
+   </property>
+   <property name="statusTip">
+    <string>Rebuild the entire database</string>
+   </property>
+  </action>
+  <action name="actionRecountRelations">
+   <property name="text">
+    <string>Recount Relations</string>
+   </property>
+   <property name="statusTip">
+    <string>Recount the relations of all categories</string>
+   </property>
+  </action>
+  <action name="actionShowLogFile">
+   <property name="text">
+    <string>Show Log File</string>
+   </property>
+   <property name="statusTip">
+    <string>Open the log file</string>
+   </property>
+  </action>
+  <action name="actionOpenConfigFolder">
+   <property name="text">
+    <string>Open Config Folder</string>
+   </property>
+   <property name="statusTip">
+    <string>Open the configuration folder</string>
+   </property>
+  </action>
+  <action name="actionBulkEdit">
+   <property name="text">
+    <string>Edit Items</string>
+   </property>
+   <property name="statusTip">
+    <string>Edit checked rows</string>
+   </property>
+  </action>
+  <action name="actionLinkChecker">
+   <property name="text">
+    <string>Link Checker</string>
+   </property>
+   <property name="statusTip">
+    <string>Validate item sources</string>
+   </property>
+  </action>
+  <action name="actionViewAsIcons">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Icons</string>
+   </property>
+  </action>
+  <action name="actionViewAsList">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>List</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
