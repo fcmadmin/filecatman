@@ -4,3 +4,9 @@ A file categorization management program, designed to make sorting, categorizing
 
 ![Alt text](/Screenshots/1.webp?raw=true "Main Window")
 ![Alt text](/Screenshots/2.png?raw=true "Main Window")
+
+### Installation
+
+#### Windows, Linux and Mac
+
+Follow the instructions in the README file.
